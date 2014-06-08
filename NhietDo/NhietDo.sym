@@ -1,7 +1,7 @@
 004-005 @READ_PROGRAM_MEMORY8.P1
-004     @WRITE_PROGRAM_MEMORY8.P2
-015     CCP_1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
 015     CCP_1_LOW
+015     CCP_1
 016     CCP_1_HIGH
 01B     CCP_2_LOW
 01B     CCP_2
@@ -25,8 +25,8 @@
 037     MAIN.@SCRATCH2
 038     MAIN.@SCRATCH3
 039     MAIN.@SCRATCH4
-048-04B @SFTOI.P1
-048-049 @ITOF.P2
+048-049 @ITOF.P1
+048-04B @SFTOI.P2
 048     uartInterrupt.@SCRATCH1
 049     @DIV88.P1
 049     uartInterrupt.@SCRATCH2
@@ -92,34 +92,32 @@ F7F     @INTERRUPT_AREA
 FFF     @INTERRUPT_AREA
 
 ROM Allocation:
-027E  @delay_ms1
-0249  init_adc
-01C1  uartInterrupt
-0031  @ITOF
-004E  @MULFF
-00C3  @DIVFF
-018D  @SFTOI
-01AC  @DIV88
-0293  MAIN
-0293  @cinit
-
-
-User Memory space: 
-
-User Memory space: 
+00027E  @delay_ms1
+000249  init_adc
+0001C1  uartInterrupt
+000031  @ITOF
+00004E  @MULFF
+0000C3  @DIVFF
+00018D  @SFTOI
+0001AC  @DIV88
+000293  MAIN
+000293  @cinit1
+0002B2  @cinit2
 
 Project Directory:
-    D:\DOCUMENT\HK8\Luan Van Tot Nghiep\NhietDo\
+    C:\Users\Nguyen\Documents\GitHub\TemperatureForPic\NhietDo\
 
 Project Files:
-    NhietDo.c
-    C:\Program Files (x86)\PICC\devices\16f887.h
-    C:\Program Files (x86)\PICC\drivers\string.h
-    C:\Program Files (x86)\PICC\drivers\stddef.h
-    C:\Program Files (x86)\PICC\drivers\ctype.h
+    NhietDo.c                                               [08-Jun-14 11:10  CRC=4F539D66]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\devices\16f887.h [30-Nov-12 18:59  CRC=49117F20]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\drivers\string.h [14-Jul-11 10:13  CRC=23EDEC8F]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\drivers\stddef.h [16-Jul-10 09:27  CRC=897CEC6C]
+    ..\..\..\..\..\..\Program Files (x86)\PICC\drivers\ctype.h [03-Jan-08 13:55  CRC=2D1F019F]
+
+Source signature=A00DF8BF
 
 Units:
-    D:\DOCUMENT\HK8\Luan Van Tot Nghiep\NhietDo\NhietDo (main)
+    NhietDo (main)
 
 Compiler Settings:
     Processor:      PIC16F887
@@ -138,4 +136,4 @@ Output Files:
     Debug/COFF:  NhietDo.cof
     Project:     NhietDo.PJT
     Call Tree:   NhietDo.tre
-    Statistics:  NhietDo.sta
+    Statistics:  NhietDo.STA

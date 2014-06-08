@@ -1,12 +1,12 @@
-CCS PCM C Compiler, Version 4.114, 93460303               25-May-14 16:53
+CCS PCM C Compiler, Version 4.140, 9036               08-Jun-14 11:10
 
-               Filename: D:\DOCUMENT\HK8\Luan Van Tot Nghiep\NhietDo\NhietDo.lst
+               Filename:   C:\Users\Nguyen\Documents\GitHub\TemperatureForPic\NhietDo\NhietDo.lst
 
-               ROM used: 990 words (12%)
-                         Largest free fragment is 2048
-               RAM used: 31 (8%) at main() level
-                         63 (17%) worst case
-               Stack:    3 worst case (1 in main + 2 for interrupts)
+               ROM used:   990 words (12%)
+                           Largest free fragment is 2048
+               RAM used:   31 (8%) at main() level
+                           63 (17%) worst case
+               Stack:     3 worst case (1 in main + 2 for interrupts)
 
 *
 0000:  MOVLW  02
@@ -479,7 +479,7 @@ CCS PCM C Compiler, Version 4.114, 93460303               25-May-14 16:53
 .................... #ifdef _ERRNO 
 .................... char * strerror(unsigned int8 errnum) 
 .................... { 
-.................... char s[15]; 
+.................... static char s[13]; 
 .................... switch( errnum) 
 .................... { 
 .................... case 0: 
@@ -529,6 +529,20 @@ CCS PCM C Compiler, Version 4.114, 93460303               25-May-14 16:53
 ....................    for (p = s; *p != '\0'; p++) 
 ....................       if (*p >= 'A' && *p <='Z') 
 ....................          *p += 'a' - 'A'; 
+....................    return(s); 
+.................... } 
+....................  
+.................... /* standard template: char *strupr(char *s). 
+....................    Replaces lowercase letters by upercase; 
+....................    returns pointer to new string s */ 
+....................  
+.................... char *strupr(char *s) 
+.................... { 
+....................    char *p; 
+....................  
+....................    for (p = s; *p != '\0'; p++) 
+....................       if (*p >= 'a' && *p <='z') 
+....................          *p -= 'a' - 'A'; 
 ....................    return(s); 
 .................... } 
 ....................  

@@ -1,24 +1,24 @@
 
-ROM used: 990 (12%)
-          990 (12%) including unused fragments
+ROM used:   990 (12%)
+            990 (12%) including unused fragments
 
-          1 Average locations per line
-          6 Average locations per statement
+            1 Average locations per line
+            6 Average locations per statement
 
-RAM used: 31 (8%) at main() level
-          63 (17%) worst case
+RAM used:   31 (8%) at main() level
+            63 (17%) worst case
 
-Stack used: 3 worst case (out of 8 total available)
+Stack used: 3/8 worst case (1 in main + 2 for interrupts)
 
 Lines Stmts  %   Files
 ----- ----- ---  -----
-   76    52  30  NhietDo.c
-  430     0   0  C:\Program Files (x86)\PICC\devices\16f887.h
-  409   121  70  C:\Program Files (x86)\PICC\drivers\string.h
-   32     0   0  C:\Program Files (x86)\PICC\drivers\stddef.h
-   28     0   0  C:\Program Files (x86)\PICC\drivers\ctype.h
+   76    52  29  NhietDo.c
+  430     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\devices\16f887.h
+  423   125  71  ..\..\..\..\..\..\Program Files (x86)\PICC\drivers\string.h
+   32     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\drivers\stddef.h
+   28     0   0  ..\..\..\..\..\..\Program Files (x86)\PICC\drivers\ctype.h
 ----- -----
-  975   173 Total
+  989   177 Total
 
 Page ROM  %  RAM   Vol Diff  Functions:
 ---- --- --- ---   --- ----  ----------
@@ -31,18 +31,19 @@ Page ROM  %  RAM   Vol Diff  Functions:
 0     31   3   4             @SFTOI
 0     21   2   3             @DIV88
 0    331  33   5  1360  5.4  MAIN
+ Inline        0             @cinit1
 
 Program metrics:
     Functions               3
-    Statements              173
-    Comments                230
-    Volume (V)              2425
-    Difficilty (D)          12.5
-    Effort to implement (E) 30298
+    Statements              177
+    Comments                233
+    Volume (V)              2427
+    Difficulty (D)          12.4
+    Effort to implement (E) 30141
     Time to implement (T)   28 minutes
     Est Delivered Bugs (B)  0
     Cyclomatic Complexity   2
-    Maintainability (MI)    112
+    Maintainability (MI)    114
 
  Segment     Used  Free
 -----------  ----  ----

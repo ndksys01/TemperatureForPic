@@ -6,3 +6,4 @@
 >>> Warning 216 "NhietDo.c" Line 77(0,1): Interrupts disabled during call to prevent re-entrancy:  (@DIV88)
       Memory usage:   ROM=12%      RAM=8% - 17%
       0 Errors,  6 Warnings.
+Build Successful.
